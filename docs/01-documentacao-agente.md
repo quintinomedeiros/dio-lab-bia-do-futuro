@@ -60,10 +60,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Chatbot em [Streamlit](https://streamlit.io) |
+| LLM | [Ollama](https://ollama.com/) (local) |
+| Base de Conhecimento | CSV com dados do usuário na pasta `data` |
+| Validação | Checagem de alucinações |
 
 ---
 
@@ -71,10 +71,8 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [X] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [X] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [X] Agente só responde com base nos dados fornecidos
+- [X] Quando não sabe, admite e redireciona
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
