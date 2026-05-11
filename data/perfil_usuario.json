@@ -1,4 +1,5 @@
 {
+  "usuario_id": "joao_silva_001",
   "nome": "João Silva",
   "idade": 32,
   "profissao": "Analista de Sistemas",
@@ -7,104 +8,201 @@
   "patrimonio_total": 15000.00,
   "reserva_emergencia_atual": 10000.00,
   "aceita_risco": false,
+  "moeda_padrao": "BRL",
+  "fuso_horario": "America/Sao_Paulo",
   "receitas": {
     "salario": {
+      "apelidos": ["salário", "pagamento", "remuneração"],
       "valor_esperado": 5000.00,
       "valor_minimo_aceitavel": 4800.00,
       "valor_maximo_aceitavel": 5200.00,
-      "status_padrao": "esperado"
+      "periodicidade": "mensal",
+      "status_padrao": "esperado",
+      "severidade_alerta": "media"
     },
     "freelance": {
+      "apelidos": ["freelance", "freela", "serviço", "projeto"],
       "valor_esperado": 800.00,
       "valor_minimo_aceitavel": 0.00,
       "valor_maximo_aceitavel": 1500.00,
-      "status_padrao": "variavel"
+      "periodicidade": "variavel",
+      "status_padrao": "variavel",
+      "severidade_alerta": "baixa"
     },
     "reembolso": {
+      "apelidos": ["reembolso", "devolução", "estorno"],
       "valor_esperado": 200.00,
       "valor_minimo_aceitavel": 0.00,
       "valor_maximo_aceitavel": 500.00,
-      "status_padrao": "ocasional"
+      "periodicidade": "ocasional",
+      "status_padrao": "ocasional",
+      "severidade_alerta": "baixa"
     },
     "comissao": {
+      "apelidos": ["comissão", "bonus", "bonificação"],
       "valor_esperado": 300.00,
       "valor_minimo_aceitavel": 0.00,
       "valor_maximo_aceitavel": 800.00,
-      "status_padrao": "variavel"
+      "periodicidade": "variavel",
+      "status_padrao": "variavel",
+      "severidade_alerta": "baixa"
     },
     "renda_extra": {
+      "apelidos": ["renda extra", "extra", "adicional"],
       "valor_esperado": 400.00,
       "valor_minimo_aceitavel": 0.00,
       "valor_maximo_aceitavel": 1000.00,
-      "status_padrao": "variavel"
+      "periodicidade": "variavel",
+      "status_padrao": "variavel",
+      "severidade_alerta": "baixa"
     }
   },
   "despesas": {
     "aluguel": {
+      "apelidos": ["aluguel", "locação", "mensalidade moradia"],
       "valor_esperado": 1300.00,
+      "valor_minimo_aceitavel": 1200.00,
       "valor_maximo_aceitavel": 1300.00,
-      "status_padrao": "fixa"
+      "periodicidade": "mensal",
+      "status_padrao": "fixa",
+      "severidade_alerta": "alta"
     },
     "condominio": {
+      "apelidos": ["condomínio"],
       "valor_esperado": 350.00,
+      "valor_minimo_aceitavel": 300.00,
       "valor_maximo_aceitavel": 400.00,
-      "status_padrao": "fixa"
+      "periodicidade": "mensal",
+      "status_padrao": "fixa",
+      "severidade_alerta": "media"
     },
     "contas_consumo": {
       "energia": {
+        "apelidos": ["energia", "luz", "conta de luz"],
         "valor_esperado": 210.00,
         "valor_maximo_aceitavel": 280.00
       },
       "agua": {
+        "apelidos": ["água", "conta de água"],
         "valor_esperado": 80.00,
         "valor_maximo_aceitavel": 120.00
       },
       "gas": {
+        "apelidos": ["gás", "gas"],
         "valor_esperado": 90.00,
         "valor_maximo_aceitavel": 130.00
       },
       "internet": {
+        "apelidos": ["internet", "wifi", "banda larga"],
         "valor_esperado": 120.00,
         "valor_maximo_aceitavel": 150.00
       },
       "telefone": {
+        "apelidos": ["telefone", "celular", "plano"],
         "valor_esperado": 60.00,
         "valor_maximo_aceitavel": 90.00
       }
     },
     "supermercado": {
+      "apelidos": ["supermercado", "mercado", "compras do mês"],
       "valor_esperado": 450.00,
       "valor_maximo_aceitavel": 600.00,
-      "status_padrao": "variavel_essencial"
+      "periodicidade": "semanal",
+      "status_padrao": "essencial_variavel",
+      "severidade_alerta": "media"
     },
     "transporte": {
+      "apelidos": ["transporte", "uber", "taxi", "combustível", "gasolina", "pedágio", "estacionamento"],
       "valor_esperado": 250.00,
       "valor_maximo_aceitavel": 350.00,
-      "status_padrao": "variavel_essencial"
+      "periodicidade": "mensal",
+      "status_padrao": "essencial_variavel",
+      "severidade_alerta": "media"
     },
     "saude": {
+      "apelidos": ["saúde", "farmácia", "medicamento", "consulta", "academia"],
       "valor_esperado": 150.00,
       "valor_maximo_aceitavel": 300.00,
-      "status_padrao": "essencial"
+      "periodicidade": "mensal",
+      "status_padrao": "essencial",
+      "severidade_alerta": "media"
     },
     "educacao": {
+      "apelidos": ["educação", "curso", "livros", "mensalidade escolar"],
       "valor_esperado": 100.00,
       "valor_maximo_aceitavel": 250.00,
-      "status_padrao": "essencial"
+      "periodicidade": "mensal",
+      "status_padrao": "essencial",
+      "severidade_alerta": "media"
     },
     "lazer": {
+      "apelidos": ["lazer", "cinema", "restaurante", "jantar", "passeio", "viagem", "presente", "delivery"],
       "valor_esperado": 200.00,
       "valor_maximo_aceitavel": 400.00,
-      "status_padrao": "discricionaria"
+      "periodicidade": "mensal",
+      "status_padrao": "discricionaria",
+      "severidade_alerta": "media"
     },
     "assinaturas": {
       "streaming": {
+        "apelidos": ["streaming", "netflix", "prime video", "spotify"],
         "valor_esperado": 40.00,
         "valor_maximo_aceitavel": 60.00
       },
       "software": {
+        "apelidos": ["software", "aplicativo", "app"],
         "valor_esperado": 50.00,
         "valor_maximo_aceitavel": 120.00
+      }
+    },
+    "despesas_especiais": {
+      "tv": {
+        "apelidos": ["tv", "televisão"],
+        "valor_esperado": 2500.00,
+        "valor_maximo_aceitavel": 3500.00,
+        "status_padrao": "discricionaria"
+      },
+      "notebook": {
+        "apelidos": ["notebook", "laptop"],
+        "valor_esperado": 3500.00,
+        "valor_maximo_aceitavel": 5000.00,
+        "status_padrao": "discricionaria"
+      },
+      "celular": {
+        "apelidos": ["celular", "smartphone"],
+        "valor_esperado": 1800.00,
+        "valor_maximo_aceitavel": 2800.00,
+        "status_padrao": "discricionaria"
+      },
+      "viagem": {
+        "apelidos": ["viagem", "hotel", "passagem"],
+        "valor_esperado": 1500.00,
+        "valor_maximo_aceitavel": 3500.00,
+        "status_padrao": "discricionaria"
+      },
+      "jantar": {
+        "apelidos": ["jantar", "restaurante", "delivery"],
+        "valor_esperado": 80.00,
+        "valor_maximo_aceitavel": 180.00,
+        "status_padrao": "discricionaria"
+      },
+      "passeio": {
+        "apelidos": ["passeio", "cinema", "parque"],
+        "valor_esperado": 60.00,
+        "valor_maximo_aceitavel": 150.00,
+        "status_padrao": "discricionaria"
+      },
+      "carro": {
+        "apelidos": ["carro", "manutenção", "combustível", "gasolina", "pedágio", "estacionamento"],
+        "valor_esperado": 300.00,
+        "valor_maximo_aceitavel": 900.00,
+        "status_padrao": "discricionaria"
+      },
+      "presente": {
+        "apelidos": ["presente", "gift"],
+        "valor_esperado": 100.00,
+        "valor_maximo_aceitavel": 250.00,
+        "status_padrao": "discricionaria"
       }
     }
   },
@@ -113,8 +211,17 @@
     "receitas_totais_esperadas": 5800.00,
     "receitas_totais_maximas": 7500.00,
     "despesas_essenciais_maximas": 3000.00,
-    "despesas_discricionarias_maximas": 700.00,
-    "despesas_totais_maximas": 3700.00
+    "despesas_discricionarias_maximas": 1800.00,
+    "despesas_totais_maximas": 4800.00
+  },
+  "regras_alerta": {
+    "alertar_quando_acima_do_maximo": true,
+    "alertar_quando_abaixo_do_minimo": true,
+    "alertar_quando_descricao_nao_bater_com_categoria": true,
+    "alertar_quando_compra_fugir_do_padrao": true,
+    "alertar_quando_houver_muitas_transacoes_semelhantes_em_pouco_tempo": true,
+    "mensagem_padrao_fora_do_padrão": "Esse lançamento está fora do seu padrão habitual.",
+    "mensagem_padrao_dentro_do_padrão": "Esse lançamento está dentro do seu padrão."
   },
   "metas": [
     {

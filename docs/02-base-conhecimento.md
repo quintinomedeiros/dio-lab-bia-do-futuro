@@ -6,13 +6,11 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_usuario.json` | JSON | Personalizar recomendações |
-| `compras_interesse.json` | JSON | Alertar para compras fora dos limites do usuário |
-| `transacoes.csv` | CSV | Analisar padrão de receitas e despesas do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores e identificar padrões de atendimento. |
+| `perfil_usuario.json` | JSON | Personalizar limites, padrões, metas e alertas do usuário. |
+| `compras_interesse.json` | JSON | Detectar compras de interesse e alertar para valores fora do esperado. |
+| `transacoes.csv` | CSV | Analisar histórico de receitas e despesas e acompanhar o orçamento. |
+| `regras_agente.json` | JSON | Definir critérios de classificação, severidade, mensagens padrão e regras operacionais. |
 
 ---
 
@@ -36,56 +34,29 @@ import pandas as pd
 import json
 
 # CSVs
-historico = pd.read_csv('data/historico_atendimento.csv')
-transacoes = pd.read_csv('data/transacoes.csv')
+historico = pd.read_csv("data/historico_atendimento.csv")
+transacoes = pd.read_csv("data/transacoes.csv")
 
 # JSONs
-with open('data/perfil_usuario.json', 'r', enconding='utf-8) as f:
+with open("data/perfil_usuario.json", "r", encoding="utf-8") as f:
     perfil = json.load(f)
 
-with open('data/compras_interesse.json', 'r', enconding='utf-8) as f:
+with open("data/compras_interesse.json", "r", encoding="utf-8") as f:
     compras = json.load(f)
+
+with open("data/regras_agente.json", "r", encoding="utf-8") as f:
+    regras = json.load(f)
 
 ```
 
 ### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
+> Os dados são incorporados ao contexto conforme a necessidade da análise, com foco em classificação, alerta e acompanhamento do orçamento.
 
-```
-DADOS DO CLIENTE (data/perfil_usuario.json):
-    nome
-    idade
-    profissao
-    perfil_financeiro
-    objetivo_principal
-    patrimonio_total
-    reserva_emergencia_atual
-    aceita_risco
-    despesas
-    receitas
-
-HISTÓRICO DE ATENDIMENTOS (historico_atendimento.csv)
-    data
-    canal
-    tema
-    resumo
-    resolvido 
-
-COMPRAS DE INTERESSE (compras_interesse.json)
-    nome
-    categoria
-    limite_esperado
-    limite_maximo_aceitavel
-    alerta
-
-TRANSAÇÕES (transacoes.csv)
-    data
-    descricao
-    categoria
-    valor
-    tipo
-
-```
+- Perfil do cliente: nome, objetivo, limites, despesas, receitas e metas.
+- Histórico de atendimentos: interações anteriores, resoluções e tipos de solicitação.
+- Compras de interesse: itens monitorados com limites e severidade.
+- Transações: lançamentos já realizados, valores, categorias e tipos.
+- Regras do agente: prioridades de classificação, limiares de alerta e mensagens padrão.
 
 ---
 
@@ -96,158 +67,39 @@ TRANSAÇÕES (transacoes.csv)
 ```
 Compras de interesse:
 
+[
   {
+    "id": "compra_tv",
     "nome": "TV",
-    "categoria": "despesa_discricionaria",
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "eletrodomesticos",
     "limite_esperado": 2500.00,
-    "limite_maximo_aceitavel": 3500.00,
-    "alerta": "Acima do padrão para esse tipo de compra"
-  },
+    "limite_alerta": 3000.00,
+    "limite_critico": 3500.00,
+    "severidade": "alta",
+    "alerta": "Compra acima do padrão para TV."
+  }
+]
 ...
 
 Histórico de atendimentos
-data,canal,tema,resumo,resolvido
-2026-01-01,chat,Entrada de recurso,Salário recebido no valor de R$ 4.800,00,sim
-2026-01-02,email,Saída de Recurso,Pagamento de aluguel no valor de R$ 1.300,00,sim
-2026-01-03,telefone,Outro registro,Dúvida sobre como cadastrar um gasto fixo,não
+evt_0001,2026-01-01,chat,receita,salario,"Salário recebido no valor de R\$ 4.800",4800.00,entrada,dentro_padrao,sim,"Valor abaixo do esperado, mas dentro do mínimo aceitável."
+evt_0002,2026-01-02,email,despesa,aluguel,"Pagamento de aluguel no valor de R\$ 1.300",1300.00,saida,dentro_padrao,sim,"Dentro do teto aceito."
 ...
 
 Perfil Usuário
 {
   "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
   "perfil_financeiro": "controle_orcamentario",
   "objetivo_principal": "Manter receitas e despesas dentro do padrão mensal",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
-  "receitas": {
-    "salario": {
-      "valor_esperado": 5000.00,
-      "valor_minimo_aceitavel": 4800.00,
-      "valor_maximo_aceitavel": 5200.00,
-      "status_padrao": "esperado"
-    },
-    "freelance": {
-      "valor_esperado": 800.00,
-      "valor_minimo_aceitavel": 0.00,
-      "valor_maximo_aceitavel": 1500.00,
-      "status_padrao": "variavel"
-    },
-    "reembolso": {
-      "valor_esperado": 200.00,
-      "valor_minimo_aceitavel": 0.00,
-      "valor_maximo_aceitavel": 500.00,
-      "status_padrao": "ocasional"
-    },
-    "comissao": {
-      "valor_esperado": 300.00,
-      "valor_minimo_aceitavel": 0.00,
-      "valor_maximo_aceitavel": 800.00,
-      "status_padrao": "variavel"
-    },
-    "renda_extra": {
-      "valor_esperado": 400.00,
-      "valor_minimo_aceitavel": 0.00,
-      "valor_maximo_aceitavel": 1000.00,
-      "status_padrao": "variavel"
-    }
-  },
-  "despesas": {
-    "aluguel": {
-      "valor_esperado": 1300.00,
-      "valor_maximo_aceitavel": 1300.00,
-      "status_padrao": "fixa"
-    },
-    "condominio": {
-      "valor_esperado": 350.00,
-      "valor_maximo_aceitavel": 400.00,
-      "status_padrao": "fixa"
-    },
-    "contas_consumo": {
-      "energia": {
-        "valor_esperado": 210.00,
-        "valor_maximo_aceitavel": 280.00
-      },
-      "agua": {
-        "valor_esperado": 80.00,
-        "valor_maximo_aceitavel": 120.00
-      },
-      "gas": {
-        "valor_esperado": 90.00,
-        "valor_maximo_aceitavel": 130.00
-      },
-      "internet": {
-        "valor_esperado": 120.00,
-        "valor_maximo_aceitavel": 150.00
-      },
-      "telefone": {
-        "valor_esperado": 60.00,
-        "valor_maximo_aceitavel": 90.00
-      }
-    },
-    "supermercado": {
-      "valor_esperado": 450.00,
-      "valor_maximo_aceitavel": 600.00,
-      "status_padrao": "variavel_essencial"
-    },
-    "transporte": {
-      "valor_esperado": 250.00,
-      "valor_maximo_aceitavel": 350.00,
-      "status_padrao": "variavel_essencial"
-    },
-    "saude": {
-      "valor_esperado": 150.00,
-      "valor_maximo_aceitavel": 300.00,
-      "status_padrao": "essencial"
-    },
-    "educacao": {
-      "valor_esperado": 100.00,
-      "valor_maximo_aceitavel": 250.00,
-      "status_padrao": "essencial"
-    },
-    "lazer": {
-      "valor_esperado": 200.00,
-      "valor_maximo_aceitavel": 400.00,
-      "status_padrao": "discricionaria"
-    },
-    "assinaturas": {
-      "streaming": {
-        "valor_esperado": 40.00,
-        "valor_maximo_aceitavel": 60.00
-      },
-      "software": {
-        "valor_esperado": 50.00,
-        "valor_maximo_aceitavel": 120.00
-      }
-    }
-  },
   "limites_gerais": {
-    "receitas_totais_minimas": 4500.00,
     "receitas_totais_esperadas": 5800.00,
-    "receitas_totais_maximas": 7500.00,
-    "despesas_essenciais_maximas": 3000.00,
-    "despesas_discricionarias_maximas": 700.00,
-    "despesas_totais_maximas": 3700.00
-  },
-  "metas": [
-    {
-      "meta": "Manter reserva de emergência",
-      "valor_necessario": 15000.00,
-      "prazo": "2026-06"
-    },
-    {
-      "meta": "Guardar para entrada do apartamento",
-      "valor_necessario": 50000.00,
-      "prazo": "2027-12"
-    }
-  ]
+    "despesas_totais_maximas": 4800.00
+  }
 }
 ...
 
 Transações
-data,descricao,categoria,valor,tipo
 2026-01-02,Salário,receita,5000.00,entrada
 2026-01-05,Freelance,receita,850.00,entrada
 2026-01-08,Reembolso,receita,220.00,entrada

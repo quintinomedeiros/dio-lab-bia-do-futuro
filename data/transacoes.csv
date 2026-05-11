@@ -1,29 +1,29 @@
-data,descricao,categoria,valor,tipo
-2026-01-02,Salário,receita,5000.00,entrada
-2026-01-05,Freelance,receita,850.00,entrada
-2026-01-08,Reembolso,receita,220.00,entrada
-2026-01-10,Aluguel,moradia,1300.00,saida
-2026-01-12,Condomínio,moradia,380.00,saida
-2026-01-14,Conta de Luz,contas_consumo,210.00,saida
-2026-01-16,Conta de Água,contas_consumo,85.00,saida
-2026-01-18,Internet,contas_consumo,120.00,saida
-2026-01-20,Supermercado,alimentacao,470.00,saida
-2026-01-22,Transporte,transporte,240.00,saida
-2026-01-24,Farmácia,saude,95.00,saida
-2026-01-26,Academia,saude,89.90,saida
-2026-01-28,Streaming,assinaturas,39.90,saida
-2026-01-30,Jantar,alimentacao,92.00,saida
-2026-02-02,Salário,receita,5000.00,entrada
-2026-02-04,Comissão,receita,300.00,entrada
-2026-02-06,Renda extra,receita,450.00,entrada
-2026-02-08,Notebook,eletronicos,4200.00,saida
-2026-02-10,Celular,eletronicos,1950.00,saida
-2026-02-12,TV,eletronicos,2600.00,saida
-2026-02-14,Viagem,lazer,1800.00,saida
-2026-02-16,Passeio,lazer,75.00,saida
-2026-02-18,Presente,lazer,130.00,saida
-2026-02-20,Carro,transporte,520.00,saida
-2026-02-22,Combustível,transporte,260.00,saida
-2026-02-24,Uber,transporte,52.00,saida
-2026-02-26,Supermercado,alimentacao,510.00,saida
-2026-02-28,Restaurante,alimentacao,145.00,saida
+id_transacao,data,descricao,descricao_normalizada,categoria_original,categoria_normalizada,subcategoria,valor,tipo,classe,flag_alerta,motivo_alerta
+txn_0001,2026-01-02,Salário,salario,receita,receita,salario,5000.00,entrada,receita,nao,
+txn_0002,2026-01-05,Freelance,freelance,receita,receita,freelance,850.00,entrada,receita,nao,
+txn_0003,2026-01-08,Reembolso,reembolso,receita,receita,reembolso,220.00,entrada,receita,nao,
+txn_0004,2026-01-10,Aluguel,aluguel,moradia,despesa,aluguel,1300.00,saida,essencial,nao,
+txn_0005,2026-01-12,Condomínio,condominio,moradia,despesa,condominio,380.00,saida,essencial,nao,
+txn_0006,2026-01-14,Conta de Luz,conta de luz,contas_consumo,despesa,energia,210.00,saida,essencial,nao,
+txn_0007,2026-01-16,Conta de Água,conta de agua,contas_consumo,despesa,agua,85.00,saida,essencial,nao,
+txn_0008,2026-01-18,Internet,internet,contas_consumo,despesa,internet,120.00,saida,essencial,nao,
+txn_0009,2026-01-20,Supermercado,supermercado,alimentacao,despesa,supermercado,470.00,saida,essencial_variavel,nao,
+txn_0010,2026-01-22,Transporte,transporte,transporte,despesa,transporte,240.00,saida,essencial_variavel,nao,
+txn_0011,2026-01-24,Farmácia,farmacia,saude,despesa,saude,95.00,saida,essencial,nao,
+txn_0012,2026-01-26,Academia,academia,saude,despesa,saude,89.90,saida,essencial,nao,
+txn_0013,2026-01-28,Streaming,streaming,assinaturas,despesa,streaming,39.90,saida,discricionaria,nao,
+txn_0014,2026-01-30,Jantar,jantar,alimentacao,despesa,jantar,92.00,saida,discricionaria,nao,
+txn_0015,2026-02-02,Salário,salario,receita,receita,salario,5000.00,entrada,receita,nao,
+txn_0016,2026-02-04,Comissão,comissao,receita,receita,comissao,300.00,entrada,receita,nao,
+txn_0017,2026-02-06,Renda extra,renda extra,receita,receita,renda_extra,450.00,entrada,receita,nao,
+txn_0018,2026-02-08,Notebook,notebook,eletronicos,despesa,notebook,4200.00,saida,discricionaria,sim,valor acima do limite esperado
+txn_0019,2026-02-10,Celular,celular,eletronicos,despesa,celular,1950.00,saida,discricionaria,nao,
+txn_0020,2026-02-12,TV,tv,eletronicos,despesa,tv,2600.00,saida,discricionaria,nao,
+txn_0021,2026-02-14,Viagem,viagem,lazer,despesa,viagem,1800.00,saida,discricionaria,nao,
+txn_0022,2026-02-16,Passeio,passeio,lazer,despesa,passeio,75.00,saida,discricionaria,nao,
+txn_0023,2026-02-18,Presente,presente,lazer,despesa,presente,130.00,saida,discricionaria,nao,
+txn_0024,2026-02-20,Carro,carro,transporte,despesa,carro,520.00,saida,discricionaria,nao,
+txn_0025,2026-02-22,Combustível,combustivel,transporte,despesa,carro,260.00,saida,discricionaria,nao,
+txn_0026,2026-02-24,Uber,uber,transporte,despesa,transporte,52.00,saida,essencial_variavel,nao,
+txn_0027,2026-02-26,Supermercado,supermercado,alimentacao,despesa,supermercado,510.00,saida,essencial_variavel,nao,
+txn_0028,2026-02-28,Restaurante,restaurante,alimentacao,despesa,jantar,145.00,saida,discricionaria,nao

@@ -1,58 +1,98 @@
 [
   {
+    "id": "compra_tv",
     "nome": "TV",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["tv", "televisão", "smart tv"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "eletrodomesticos",
     "limite_esperado": 2500.00,
-    "limite_maximo_aceitavel": 3500.00,
-    "alerta": "Acima do padrão para esse tipo de compra"
+    "limite_alerta": 3000.00,
+    "limite_critico": 3500.00,
+    "severidade": "alta",
+    "alerta": "Compra acima do padrão para TV."
   },
   {
+    "id": "compra_notebook",
     "nome": "Notebook",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["notebook", "laptop", "computador portátil"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "eletronicos",
     "limite_esperado": 3500.00,
-    "limite_maximo_aceitavel": 5000.00,
-    "alerta": "Acima do padrão para esse tipo de compra"
+    "limite_alerta": 4200.00,
+    "limite_critico": 5000.00,
+    "severidade": "alta",
+    "alerta": "Compra acima do padrão para notebook."
   },
   {
+    "id": "compra_celular",
     "nome": "Celular",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["celular", "smartphone", "telefone"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "eletronicos",
     "limite_esperado": 1800.00,
-    "limite_maximo_aceitavel": 2800.00,
-    "alerta": "Acima do padrão para esse tipo de compra"
+    "limite_alerta": 2300.00,
+    "limite_critico": 2800.00,
+    "severidade": "alta",
+    "alerta": "Compra acima do padrão para celular."
   },
   {
+    "id": "compra_viagem",
     "nome": "Viagem",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["viagem", "hotel", "passagem", "pacote"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "lazer",
     "limite_esperado": 1500.00,
-    "limite_maximo_aceitavel": 3500.00,
-    "alerta": "Desembolso elevado para viagem"
+    "limite_alerta": 2500.00,
+    "limite_critico": 3500.00,
+    "severidade": "media",
+    "alerta": "Viagem acima do padrão do usuário."
   },
   {
+    "id": "compra_jantar",
     "nome": "Jantar",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["jantar", "restaurante", "delivery", "ifood"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "alimentacao_fora",
     "limite_esperado": 80.00,
-    "limite_maximo_aceitavel": 180.00,
-    "alerta": "Gasto acima do habitual com alimentação fora de casa"
+    "limite_alerta": 130.00,
+    "limite_critico": 180.00,
+    "severidade": "media",
+    "alerta": "Jantar acima do padrão do usuário."
   },
   {
+    "id": "compra_passeio",
     "nome": "Passeio",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["passeio", "cinema", "parque", "evento"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "lazer",
     "limite_esperado": 60.00,
-    "limite_maximo_aceitavel": 150.00,
-    "alerta": "Gasto acima do padrão para passeio"
+    "limite_alerta": 100.00,
+    "limite_critico": 150.00,
+    "severidade": "media",
+    "alerta": "Passeio acima do padrão do usuário."
   },
   {
+    "id": "compra_carro",
     "nome": "Carro",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["carro", "manutenção", "combustível", "gasolina", "etanol", "pedágio", "estacionamento"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "transporte",
     "limite_esperado": 300.00,
-    "limite_maximo_aceitavel": 900.00,
-    "alerta": "Despesas com carro fora do padrão esperado"
+    "limite_alerta": 600.00,
+    "limite_critico": 900.00,
+    "severidade": "alta",
+    "alerta": "Gasto com carro acima do padrão do usuário."
   },
   {
+    "id": "compra_presente",
     "nome": "Presente",
-    "categoria": "despesa_discricionaria",
+    "sinonimos": ["presente", "gift", "lembrança"],
+    "categoria_financeira": "despesa_discricionaria",
+    "subcategoria": "lazer",
     "limite_esperado": 100.00,
-    "limite_maximo_aceitavel": 250.00,
-    "alerta": "Valor acima do costume para presente"
+    "limite_alerta": 180.00,
+    "limite_critico": 250.00,
+    "severidade": "baixa",
+    "alerta": "Presente acima do padrão do usuário."
   }
 ]
