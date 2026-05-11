@@ -1,0 +1,58 @@
+[
+  {
+    "nome": "TV",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 2500.00,
+    "limite_maximo_aceitavel": 3500.00,
+    "alerta": "Acima do padrão para esse tipo de compra"
+  },
+  {
+    "nome": "Notebook",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 3500.00,
+    "limite_maximo_aceitavel": 5000.00,
+    "alerta": "Acima do padrão para esse tipo de compra"
+  },
+  {
+    "nome": "Celular",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 1800.00,
+    "limite_maximo_aceitavel": 2800.00,
+    "alerta": "Acima do padrão para esse tipo de compra"
+  },
+  {
+    "nome": "Viagem",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 1500.00,
+    "limite_maximo_aceitavel": 3500.00,
+    "alerta": "Desembolso elevado para viagem"
+  },
+  {
+    "nome": "Jantar",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 80.00,
+    "limite_maximo_aceitavel": 180.00,
+    "alerta": "Gasto acima do habitual com alimentação fora de casa"
+  },
+  {
+    "nome": "Passeio",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 60.00,
+    "limite_maximo_aceitavel": 150.00,
+    "alerta": "Gasto acima do padrão para passeio"
+  },
+  {
+    "nome": "Carro",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 300.00,
+    "limite_maximo_aceitavel": 900.00,
+    "alerta": "Despesas com carro fora do padrão esperado"
+  },
+  {
+    "nome": "Presente",
+    "categoria": "despesa_discricionaria",
+    "limite_esperado": 100.00,
+    "limite_maximo_aceitavel": 250.00,
+    "alerta": "Valor acima do costume para presente"
+  }
+]

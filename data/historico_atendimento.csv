@@ -1,6 +1,91 @@
 data,canal,tema,resumo,resolvido
-2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
-2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
-2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
-2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
-2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+2026-01-01,chat,Entrada de recurso,Salário recebido no valor de R$ 4.800,00,sim
+2026-01-02,email,Saída de Recurso,Pagamento de aluguel no valor de R$ 1.300,00,sim
+2026-01-03,telefone,Outro registro,Dúvida sobre como cadastrar um gasto fixo,não
+2026-01-04,chat,Saída de Recurso,Compra de supermercado no valor de R$ 320,00,sim
+2026-01-05,email,Entrada de recurso,Freelance recebido no valor de R$ 900,00,sim
+2026-01-06,chat,Saída de Recurso,Pagamento de internet no valor de R$ 120,00,sim
+2026-01-07,telefone,Outro registro,Pedido de ajuda para entender o orçamento do mês,não
+2026-01-08,email,Saída de Recurso,Gasolina no valor de R$ 250,00,sim
+2026-01-09,chat,Entrada de recurso,Reembolso recebido no valor de R$ 180,00,sim
+2026-01-10,telefone,Saída de Recurso,Conta de luz no valor de R$ 210,00,sim
+2026-01-11,email,Outro registro,Consulta sobre gasto fora do padrão,não
+2026-01-12,chat,Saída de Recurso,Assinatura de streaming no valor de R$ 39,90,sim
+2026-01-13,telefone,Entrada de recurso,Venda de item usado no valor de R$ 150,00,sim
+2026-01-14,email,Saída de Recurso,Transporte por aplicativo no valor de R$ 68,00,sim
+2026-01-15,chat,Outro registro,Mensagem sobre meta de economia mensal,não
+2026-01-16,telefone,Saída de Recurso,Jantar fora no valor de R$ 94,00,sim
+2026-01-17,email,Entrada de recurso,Renda extra no valor de R$ 1.200,00,sim
+2026-01-18,chat,Saída de Recurso,Farmácia no valor de R$ 76,50,sim
+2026-01-19,telefone,Outro registro,Dúvida sobre despesas variáveis,não
+2026-01-20,email,Saída de Recurso,Compra de roupas no valor de R$ 280,00,sim
+2026-01-21,chat,Entrada de recurso,Devolução de pagamento no valor de R$ 65,00,sim
+2026-01-22,telefone,Saída de Recurso,Pagamento do plano de celular no valor de R$ 58,00,sim
+2026-01-23,email,Outro registro,Pedido de orientação sobre controle financeiro,não
+2026-01-24,chat,Saída de Recurso,Supermercado no valor de R$ 410,00,sim
+2026-01-25,telefone,Entrada de recurso,Comissão recebida no valor de R$ 530,00,sim
+2026-01-26,email,Saída de Recurso,Curso online no valor de R$ 89,00,sim
+2026-01-27,chat,Outro registro,Comentário sobre lançamento que não se encaixa nas categorias,não
+2026-01-28,telefone,Saída de Recurso,Conserto do carro no valor de R$ 640,00,sim
+2026-01-29,email,Entrada de recurso,Auxílio recebido no valor de R$ 300,00,sim
+2026-01-30,chat,Saída de Recurso,Combustível no valor de R$ 230,00,sim
+2026-01-31,telefone,Outro registro,Solicitação de revisão de orçamento mensal,não
+2026-02-01,email,Saída de Recurso,Pagamento de condomínio no valor de R$ 275,00,sim
+2026-02-02,chat,Entrada de recurso,Salário recebido no valor de R$ 4.800,00,sim
+2026-02-03,telefone,Saída de Recurso,Almoço no valor de R$ 42,00,sim
+2026-02-04,email,Outro registro,Pergunta sobre limites de consumo,não
+2026-02-05,chat,Saída de Recurso,Material escolar no valor de R$ 136,00,sim
+2026-02-06,telefone,Entrada de recurso,Renda de aluguel no valor de R$ 1.000,00,sim
+2026-02-07,email,Saída de Recurso,Academia no valor de R$ 89,90,sim
+2026-02-08,chat,Outro registro,Alerta sobre despesa acima do padrão,não
+2026-02-09,telefone,Saída de Recurso,Medicamentos no valor de R$ 57,30,sim
+2026-02-10,email,Entrada de recurso,Presente em dinheiro no valor de R$ 200,00,sim
+2026-02-11,chat,Saída de Recurso,Viagem de fim de semana no valor de R$ 480,00,não
+2026-02-12,telefone,Outro registro,Dúvida sobre compra não classificada,não
+2026-02-13,email,Saída de Recurso,Entrega por delivery no valor de R$ 61,00,sim
+2026-02-14,chat,Entrada de recurso,Freelance recebido no valor de R$ 750,00,sim
+2026-02-15,telefone,Saída de Recurso,Presente de aniversário no valor de R$ 110,00,sim
+2026-02-16,email,Outro registro,Mensagem sobre acompanhamento do mês,não
+2026-02-17,chat,Saída de Recurso,Cinema no valor de R$ 52,00,sim
+2026-02-18,telefone,Entrada de recurso,Restituição recebida no valor de R$ 340,00,sim
+2026-02-19,email,Saída de Recurso,Compra de livros no valor de R$ 145,00,sim
+2026-02-20,chat,Outro registro,Pedido de ajuda para organizar despesas fixas,não
+2026-02-21,telefone,Saída de Recurso,Passagem de ônibus no valor de R$ 18,00,sim
+2026-02-22,email,Entrada de recurso,Renda extra no valor de R$ 620,00,sim
+2026-02-23,chat,Saída de Recurso,Conta de água no valor de R$ 74,00,sim
+2026-02-24,telefone,Outro registro,Dúvida sobre saldo disponível,não
+2026-02-25,email,Saída de Recurso,Compra em farmácia no valor de R$ 33,40,sim
+2026-02-26,chat,Entrada de recurso,Bonificação recebida no valor de R$ 500,00,sim
+2026-02-27,telefone,Saída de Recurso,Refeição no trabalho no valor de R$ 28,00,sim
+2026-02-28,email,Outro registro,Comentário sobre hábito de consumo,não
+2026-03-01,chat,Saída de Recurso,Pagamento de telefone no valor de R$ 59,00,sim
+2026-03-02,telefone,Entrada de recurso,Saldo transferido de conta no valor de R$ 1.000,00,sim
+2026-03-03,email,Saída de Recurso,Compras no mercado no valor de R$ 365,00,sim
+2026-03-04,chat,Outro registro,Pedido de revisão do orçamento de março,não
+2026-03-05,telefone,Saída de Recurso,Pedágio no valor de R$ 22,50,sim
+2026-03-06,email,Entrada de recurso,Pagamento recebido no valor de R$ 850,00,sim
+2026-03-07,chat,Saída de Recurso,Conta de gás no valor de R$ 91,00,sim
+2026-03-08,telefone,Outro registro,Dúvida sobre despesas fora do padrão,não
+2026-03-09,email,Saída de Recurso,Lanche no valor de R$ 19,80,sim
+2026-03-10,chat,Entrada de recurso,Reembolso de viagem no valor de R$ 260,00,sim
+2026-03-11,telefone,Saída de Recurso,Compra de presente no valor de R$ 130,00,sim
+2026-03-12,email,Outro registro,Mensagem sem relação com entrada ou saída,não
+2026-03-13,chat,Saída de Recurso,Manutenção da bicicleta no valor de R$ 75,00,sim
+2026-03-14,telefone,Entrada de recurso,Renda de comissão no valor de R$ 430,00,sim
+2026-03-15,email,Saída de Recurso,Consulta médica no valor de R$ 160,00,sim
+2026-03-16,chat,Outro registro,Pergunta sobre gastos essenciais,não
+2026-03-17,telefone,Saída de Recurso,Pagamento de assinatura no valor de R$ 24,90,sim
+2026-03-18,email,Entrada de recurso,Pagamento por serviço no valor de R$ 1.250,00,sim
+2026-03-19,chat,Saída de Recurso,Compra de material de limpeza no valor de R$ 48,00,sim
+2026-03-20,telefone,Outro registro,Solicitação de ajuda para interpretar o extrato,não
+2026-03-21,email,Saída de Recurso,Estacionamento no valor de R$ 16,00,sim
+2026-03-22,chat,Entrada de recurso,Renda extra no valor de R$ 700,00,sim
+2026-03-23,telefone,Saída de Recurso,Café e lanche no valor de R$ 26,00,sim
+2026-03-24,email,Outro registro,Comentário sobre controle de hábitos financeiros,não
+2026-03-25,chat,Saída de Recurso,Compra de utensílios domésticos no valor de R$ 87,00,sim
+2026-03-26,telefone,Entrada de recurso,Restituição de imposto no valor de R$ 900,00,sim
+2026-03-27,email,Saída de Recurso,Mensalidade escolar no valor de R$ 540,00,sim
+2026-03-28,chat,Outro registro,Dúvida sobre transação não classificada,não
+2026-03-29,telefone,Saída de Recurso,Taxi no valor de R$ 44,00,sim
+2026-03-30,email,Entrada de recurso,Aluguel recebido no valor de R$ 1.100,00,sim
+2026-03-31,chat,Saída de Recurso,Compra online no valor de R$ 210,00,não

@@ -1,11 +1,29 @@
 data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+2026-01-02,Salário,receita,5000.00,entrada
+2026-01-05,Freelance,receita,850.00,entrada
+2026-01-08,Reembolso,receita,220.00,entrada
+2026-01-10,Aluguel,moradia,1300.00,saida
+2026-01-12,Condomínio,moradia,380.00,saida
+2026-01-14,Conta de Luz,contas_consumo,210.00,saida
+2026-01-16,Conta de Água,contas_consumo,85.00,saida
+2026-01-18,Internet,contas_consumo,120.00,saida
+2026-01-20,Supermercado,alimentacao,470.00,saida
+2026-01-22,Transporte,transporte,240.00,saida
+2026-01-24,Farmácia,saude,95.00,saida
+2026-01-26,Academia,saude,89.90,saida
+2026-01-28,Streaming,assinaturas,39.90,saida
+2026-01-30,Jantar,alimentacao,92.00,saida
+2026-02-02,Salário,receita,5000.00,entrada
+2026-02-04,Comissão,receita,300.00,entrada
+2026-02-06,Renda extra,receita,450.00,entrada
+2026-02-08,Notebook,eletronicos,4200.00,saida
+2026-02-10,Celular,eletronicos,1950.00,saida
+2026-02-12,TV,eletronicos,2600.00,saida
+2026-02-14,Viagem,lazer,1800.00,saida
+2026-02-16,Passeio,lazer,75.00,saida
+2026-02-18,Presente,lazer,130.00,saida
+2026-02-20,Carro,transporte,520.00,saida
+2026-02-22,Combustível,transporte,260.00,saida
+2026-02-24,Uber,transporte,52.00,saida
+2026-02-26,Supermercado,alimentacao,510.00,saida
+2026-02-28,Restaurante,alimentacao,145.00,saida
